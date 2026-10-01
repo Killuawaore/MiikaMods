@@ -37,12 +37,15 @@ jobs:
 
       - name: Publicar manifesto
         run: |
-          if git diff --quiet -- access/manifest.json; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add access/manifest.json
+
+          if git diff --cached --quiet; then
             echo "Nenhuma alteracao para publicar."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add access/manifest.json
+
           git commit -m "Atualizar manifesto de acesso [skip ci]"
           git push
