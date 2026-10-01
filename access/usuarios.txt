@@ -1,0 +1,4 @@
+# Um nick do Minecraft por linha.
+# Linhas vazias e linhas com # sao ignoradas.
+# Exemplo:
+# Miika
