@@ -1,7 +1,4 @@
-# Um nick do Minecraft por linha.
-# Linhas vazias e linhas com # sao ignoradas.
-# Exemplo:
-# Miika
+# 1 nick por linha
 Miikinha
 P3DRU_
 LaysaGardini
@@ -10,3 +7,4 @@ ALEXM0NTE_
 S4UL0
 Guihh_
 _LiizZ_
+NarutoxBR
